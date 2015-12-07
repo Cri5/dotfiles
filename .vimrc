@@ -1,5 +1,5 @@
 set modelines=1
-
+set mouse=a
 "Default shell
 set shell=/bin/bash
 

@@ -7,4 +7,5 @@ function upgraderino
 end
 
 function updaterino
-	sudo apt-get update
+	sudo apt-get updat
+end
