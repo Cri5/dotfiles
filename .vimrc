@@ -14,6 +14,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Bundle 'VundleVim/Vundle.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
