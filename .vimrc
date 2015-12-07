@@ -3,8 +3,6 @@ set modelines=1
 "Default shell
 set shell=/bin/bash
 
-
-
 " Vundle config
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -22,18 +20,16 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'yosiat/oceanic-next-vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " }}}
 
-
 " Color scheme {{{
-colorscheme OceanicNext
+set background=dark
 syntax enable
-syntax on
-filetype plugin on
 " }}}
 
 " Basic
@@ -71,11 +67,14 @@ nnoremap <leader>a :Ag " ag.vim ,a
 	let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 " }}}
-
 " CtrlP {{{
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " }}}
+" NERDtree {{{
+map <C-n> :NERDTreeToggle<CR>
+" }}}
+
 " vim:foldmethod=marker:foldlevel=0
