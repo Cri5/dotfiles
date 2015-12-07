@@ -1,3 +1,6 @@
+"Default shell
+set shell=/bin/bash
+
 " Vundle config
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -9,8 +12,8 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
+Bundle 'VundleVim/Vundle.vim'
+Bundle 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
