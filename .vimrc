@@ -3,6 +3,7 @@ set mouse=a
 "Default shell
 set shell=/bin/bash
 
+" Vundle {{{
 " Vundle config
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -12,8 +13,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
-
-" Vundle {{{
+"
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
@@ -27,12 +27,10 @@ Plugin 'tpope/vim-rails'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " }}}
-
 " Color scheme {{{
 set background=dark
 syntax enable
 " }}}
-
 " Basic {{{
 set number "line numbering
 set relativenumber "relative numbering
@@ -52,15 +50,12 @@ nnoremap j gj
 nnoremap k gk
 inoremap jk <esc> " jk is escape
 " }}}
-
 " Gundo {{{
 nnoremap <leader>u :GundoToggle<CR>
 " }}}
-
 " Silver-Searcher {{{
 nnoremap <leader>a :Ag " ag.vim ,a
 " }}}
-
 " Tmux {{{
 " allows cursor change in tmux mode
  if exists('$TMUX')
