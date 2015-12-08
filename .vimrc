@@ -33,7 +33,7 @@ set background=dark
 syntax enable
 " }}}
 
-" Basic
+" Basic {{{
 set number "line numbering
 set relativenumber "relative numbering
 
@@ -51,12 +51,15 @@ set hlsearch
 nnoremap j gj
 nnoremap k gk
 inoremap jk <esc> " jk is escape
+" }}}
 
-" toggle gundo
+" Gundo {{{
 nnoremap <leader>u :GundoToggle<CR>
+" }}}
 
+" Silver-Searcher {{{
 nnoremap <leader>a :Ag " ag.vim ,a
-
+" }}}
 
 " Tmux {{{
 " allows cursor change in tmux mode
