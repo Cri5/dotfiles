@@ -1,12 +1,14 @@
 set modelines=1
 set mouse=a
 "Default shell
-set shell=/bin/fish
+set shell=/bin/bash
 
 " Vundle {{{
 " Vundle config
 set nocompatible              " be iMproved, required
-filetype off                  " required
+syntax on
+filetype off " required
+filetype plugin on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -21,6 +23,8 @@ Plugin 'yosiat/oceanic-next-vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -30,10 +34,9 @@ filetype plugin indent on    " required
 set background=dark
 syntax enable
 " }}}
-" Basic {{{
+" Basic {{{i
 set number "line numbering
 set relativenumber "relative numbering
-
 function TRelative()
 	set relativenumber!
 endfunc
@@ -53,6 +56,10 @@ set expandtab
 nnoremap j gj
 nnoremap k gk
 inoremap jk <esc> " jk is escape
+
+" for vim-airline
+set laststatus=2
+
 " }}}
 " Gundo {{{
 nnoremap <leader>u :GundoToggle<CR>
@@ -75,6 +82,7 @@ let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+let g:ctrlp_show_hidden = 1
 " }}}
 " NERDtree {{{
 map <C-n> :NERDTreeToggle<CR>
