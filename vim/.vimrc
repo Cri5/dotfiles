@@ -1,7 +1,7 @@
 set modelines=1
 set mouse=a
 "Default shell
-set shell=/bin/bash
+set shell=/bin/fish
 
 " Vundle {{{
 " Vundle config
