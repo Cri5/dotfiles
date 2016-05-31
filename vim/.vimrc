@@ -1,3 +1,8 @@
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 set modelines=1
 set mouse=a
 "Default shell
