@@ -8,7 +8,6 @@ set mouse=a
 "Default shell
 set shell=/bin/bash
 
-" Vundle {{{
 " Vundle config
 set nocompatible              " be iMproved, required
 syntax on
@@ -34,12 +33,8 @@ Plugin 'vim-airline/vim-airline-themes'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" }}}
-" Color scheme {{{
 set background=dark
 syntax enable
-" }}}
-" Basic {{{i
 set number "line numbering
 set relativenumber "relative numbering
 function TRelative()
@@ -65,14 +60,8 @@ inoremap jk <esc> " jk is escape
 " for vim-airline
 set laststatus=2
 
-" }}}
-" Gundo {{{
 nnoremap <leader>u :GundoToggle<CR>
-" }}}
-" Silver-Searcher {{{
 nnoremap <leader>a :Ag " ag.vim ,a
-" }}}
-" Tmux {{{
 " allows cursor change in tmux mode
  if exists('$TMUX')
         let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
@@ -81,16 +70,9 @@ nnoremap <leader>a :Ag " ag.vim ,a
         let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 	let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
-" }}}
-" CtrlP {{{
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 let g:ctrlp_show_hidden = 1
-" }}}
-" NERDtree {{{
 map <C-n> :NERDTreeToggle<CR>
-" }}}
-
-" vim:foldmethod=marker:foldlevel=0
