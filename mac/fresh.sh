@@ -55,6 +55,7 @@ rm Docker.dmg
 brew cask install jetbrains-toolbox
 brew cask install iterm2
 brew cask install google-chrome
+brew cask install slack
 
 source ~/.zshrc
 cd
