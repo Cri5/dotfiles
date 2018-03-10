@@ -3,6 +3,9 @@
 # git
 git config --global user.name "Krzysztof Kraszewski"
 git config --global user.email krzysztof@kraszew.ski
+git config --global diff.submodule log
+git config --global status.submoduleSummary true
+git config --global alias.spush 'push --recurse-submodules=on-demand'
 
 # Set up directories
 cd
