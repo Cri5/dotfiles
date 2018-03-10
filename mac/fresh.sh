@@ -56,6 +56,7 @@ brew cask install jetbrains-toolbox
 brew cask install iterm2
 brew cask install google-chrome
 brew cask install slack
+brew cask install qbittorrent
 
 source ~/.zshrc
 cd
