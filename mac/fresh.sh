@@ -55,6 +55,12 @@ sudo cp -R "/Volumes/Docker/Docker.app" /Applications
 umount /Volumes/Docker
 rm Docker.dmg
 
+# Node
+brew install node
+brew install yarn
+yarn global add n
+sudo n latest
+
 brew cask install jetbrains-toolbox
 brew cask install iterm2
 brew cask install google-chrome
