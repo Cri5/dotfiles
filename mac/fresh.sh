@@ -68,6 +68,7 @@ brew cask install slack
 brew cask install qbittorrent
 brew cask install discord
 brew cask install spotify
+brew cask install telegram
 
 source ~/.zshrc
 cd
