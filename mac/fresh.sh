@@ -36,6 +36,7 @@ brew install yarn
 brew install wget
 brew install mas
 brew install doctl
+brew install kubectl
 
 # Node
 yarn global add n
