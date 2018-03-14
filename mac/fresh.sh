@@ -28,45 +28,21 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew cask
 
-# VS Code
-brew cask install visual-studio-code
-rm ~/Library/Application\ Support/Code/User/settings.json
-code --install-extension zhuangtongfa.material-theme
-cp ~/Projects/Personal/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-
-# Powerline fonts
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
-cd ..
-rm -rf fonts
-
-# Fira Code
+# Taps
 brew tap caskroom/fonts
-brew cask install font-fira-code
 
-brew install wget
-brew install mas
-
-# Docker
-cd ~/Downloads
-wget -q https://download.docker.com/mac/stable/Docker.dmg
-hdiutil mount Docker.dmg
-sudo cp -R "/Volumes/Docker/Docker.app" /Applications
-umount /Volumes/Docker
-rm Docker.dmg
-
-wget -q https://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_darwin_amd64.zip
-unzip terraform_0.11.3_darwin_amd64.zip
-rm terraform_0.11.3_darwin_amd64.zip
-mv terraform /usr/local/bin/terraform
-
-# Node
 brew install node
 brew install yarn
+brew install wget
+brew install mas
+brew install doctl
+
+# Node
 yarn global add n
 sudo n latest
 
+brew cask install font-fira-code
+brew cask install visual-studio-code
 brew cask install jetbrains-toolbox
 brew cask install iterm2
 brew cask install google-chrome
@@ -79,6 +55,32 @@ brew cask install telegram
 mas install 904280696
 mas install 441258766
 mas install 443987910
+
+# VS Code
+rm ~/Library/Application\ Support/Code/User/settings.json
+code --install-extension zhuangtongfa.material-theme
+cp ~/Projects/Personal/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+
+# Powerline fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+# Docker
+cd ~/Downloads
+wget -q https://download.docker.com/mac/stable/Docker.dmg
+hdiutil mount Docker.dmg
+sudo cp -R "/Volumes/Docker/Docker.app" /Applications
+umount /Volumes/Docker
+rm Docker.dmg
+
+# Terraform
+wget -q https://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_darwin_amd64.zip
+unzip terraform_0.11.3_darwin_amd64.zip
+rm terraform_0.11.3_darwin_amd64.zip
+mv terraform /usr/local/bin/terraform
 
 source ~/.zshrc
 cd
