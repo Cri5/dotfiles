@@ -46,6 +46,7 @@ brew tap caskroom/fonts
 brew cask install font-fira-code
 
 brew install wget
+brew install mas
 
 # Docker
 cd ~/Downloads
@@ -69,6 +70,10 @@ brew cask install qbittorrent
 brew cask install discord
 brew cask install spotify
 brew cask install telegram
+
+mas install 904280696
+mas install 441258766
+mas install 443987910
 
 source ~/.zshrc
 cd
