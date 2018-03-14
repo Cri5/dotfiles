@@ -56,6 +56,11 @@ sudo cp -R "/Volumes/Docker/Docker.app" /Applications
 umount /Volumes/Docker
 rm Docker.dmg
 
+wget -q https://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_darwin_amd64.zip
+unzip terraform_0.11.3_darwin_amd64.zip
+rm terraform_0.11.3_darwin_amd64.zip
+mv terraform /usr/local/bin/terraform
+
 # Node
 brew install node
 brew install yarn
