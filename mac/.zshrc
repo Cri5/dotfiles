@@ -85,3 +85,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 DEFAULT_USER="$USER"
+EXTENDED_GLOB=true
