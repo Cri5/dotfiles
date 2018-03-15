@@ -53,9 +53,10 @@ brew cask install discord
 brew cask install spotify
 brew cask install telegram
 
-mas install 904280696
-mas install 441258766
-mas install 443987910
+mas install 904280696 # Magnet
+mas install 441258766 # 1Password
+mas install 443987910 # Things
+mas install 497799835 # XCode
 
 # VS Code
 rm ~/Library/Application\ Support/Code/User/settings.json
