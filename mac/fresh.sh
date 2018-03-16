@@ -57,6 +57,7 @@ mas install 904280696 # Magnet
 mas install 441258766 # 1Password
 mas install 443987910 # Things
 mas install 497799835 # XCode
+mas install 409201541 # Pages
 
 # VS Code
 rm ~/Library/Application\ Support/Code/User/settings.json
