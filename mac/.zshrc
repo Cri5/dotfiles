@@ -86,3 +86,6 @@ source $ZSH/oh-my-zsh.sh
 
 DEFAULT_USER="$USER"
 EXTENDED_GLOB=true
+
+export LC_ALL=pl_PL.UTF-8
+export LANG=pl_PL.UTF-8
