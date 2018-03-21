@@ -89,3 +89,8 @@ EXTENDED_GLOB=true
 
 export LC_ALL=pl_PL.UTF-8
 export LANG=pl_PL.UTF-8
+
+export PATH=~/Library/Python/3.6/bin:$PATH
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin

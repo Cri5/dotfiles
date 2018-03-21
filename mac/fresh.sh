@@ -36,7 +36,9 @@ brew install yarn
 brew install wget
 brew install mas
 brew install doctl
-brew install kubectl
+# brew install kubectl
+brew install python3
+brew install go
 
 # Node
 yarn global add n
@@ -58,6 +60,8 @@ mas install 441258766 # 1Password
 mas install 443987910 # Things
 mas install 497799835 # XCode
 mas install 409201541 # Pages
+
+pip3 install awscli --upgrade --user
 
 # VS Code
 rm ~/Library/Application\ Support/Code/User/settings.json
