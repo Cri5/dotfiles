@@ -90,7 +90,14 @@ EXTENDED_GLOB=true
 export LC_ALL=pl_PL.UTF-8
 export LANG=pl_PL.UTF-8
 
+# Python
 export PATH=~/Library/Python/3.6/bin:$PATH
 
+# Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# Android Studio
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
