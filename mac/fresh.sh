@@ -2,7 +2,7 @@
 
 # git
 git config --global user.name "Krzysztof Kraszewski"
-git config --global user.email krzysztof@kraszew.ski
+git config --global user.email krzysztof@kraszewski.app
 git config --global diff.submodule log
 git config --global status.submoduleSummary true
 git config --global alias.spush 'push --recurse-submodules=on-demand'
@@ -57,7 +57,7 @@ brew cask install telegram
 
 mas install 904280696 # Magnet
 mas install 443987910 # Things
-mas install 497799835 # XCode
+mas install 497799835 # Xcode
 mas install 409201541 # Pages
 
 pip3 install awscli --upgrade --user
@@ -83,10 +83,10 @@ umount /Volumes/Docker
 rm Docker.dmg
 
 # Terraform
-wget -q https://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_darwin_amd64.zip
-unzip terraform_0.11.3_darwin_amd64.zip
-rm terraform_0.11.3_darwin_amd64.zip
-mv terraform /usr/local/bin/terraform
+# wget -q https://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_darwin_amd64.zip
+# unzip terraform_0.11.3_darwin_amd64.zip
+# rm terraform_0.11.3_darwin_amd64.zip
+# mv terraform /usr/local/bin/terraform
 
 source ~/.zshrc
 cd
