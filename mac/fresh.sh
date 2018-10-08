@@ -9,7 +9,7 @@ git config --global alias.spush 'push --recurse-submodules=on-demand'
 
 # Set up directories
 cd
-mkdir -p Projects/{Personal,Scuer}
+mkdir -p Projects/Personal
 mkdir Repos
 mkdir Tests
 
