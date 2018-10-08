@@ -66,6 +66,7 @@ pip3 install awscli --upgrade --user
 rm ~/Library/Application\ Support/Code/User/settings.json
 code --install-extension zhuangtongfa.material-theme
 code --install-extension isudox.vscode-jetbrains-keybindings
+code --install-extension eamodio.gitlens
 cp ~/Projects/Personal/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 # Powerline fonts
