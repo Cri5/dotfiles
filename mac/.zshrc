@@ -99,7 +99,7 @@ export PATH=$PATH:$GOPATH/bin
 
 # Android
 export ANDROID_HOME=$HOME/Library/Android/sdk
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
@@ -108,3 +108,12 @@ if [ -f '/Users/krszwsk/Apps/google-cloud-sdk/path.zsh.inc' ]; then source '/Use
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/krszwsk/Apps/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/krszwsk/Apps/google-cloud-sdk/completion.zsh.inc'; fi
+
+  # Set Spaceship ZSH as a prompt
+  autoload -U promptinit; promptinit
+  prompt spaceship
+
+export PATH=$PATH:$HOME/Binaries/flutter/bin
+
+typeset +gx -A GITHUB
+GITHUB[user]=krszwsk
