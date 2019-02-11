@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions gh)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,3 +117,7 @@ export PATH=$PATH:$HOME/Binaries/flutter/bin
 
 typeset +gx -A GITHUB
 GITHUB[user]=krszwsk
+
+# fnm
+export PATH=$HOME/.fnm:$PATH
+eval `fnm env`
